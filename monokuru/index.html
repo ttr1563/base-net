@@ -27,29 +27,18 @@
     <script src="./lib/js/app.js" type="text/javascript" charset="utf-8" defer></script>
   </head>
   <body>
-    <?php date_default_timezone_set('Asia/Tokyo'); ?>
-    <?php if(strpos($_SERVER['REQUEST_URI'],'0CXzFNkwxS4J7si') != false || (strtotime(date('Y-m-d H:i')) >= strtotime('2019-4-13 17:00')) ) : ?>
-      <main class="video-sp-container">
-        <video controls width="600px" height="400px" id="video">
-          <source src="dist/movies/sample.webm" type="video/webm">
-          <source src="dist/movies/sample.mp4" type="video/mp4">このブラウザーはサポート対象外になります。
-        </video>
-        <div class="video-ended-modal">
-          <div class="inner">
-            <div class="video-ended-link">
-              <a href="https://www.mwamjapan.info/pages/cth2019_jpntour">
-                <span class="upper"></span>
-                <span class="downer"></span>
-              </a>
-            </div>
-            <div class="video-ended-repeat-btn">
-              <button class="btn btn-primary" id="videoRepeat"><img src="./dist/images/replay.svg" alt="play"></button>
-            </div>
+    <main class="video-sp-container">
+      <video controls width="600px" height="400px" id="video">
+        <source src="dist/movies/sample.webm" type="video/webm">
+        <source src="dist/movies/sample.mp4" type="video/mp4">このブラウザーはサポート対象外になります。
+      </video>
+      <div class="video-ended-modal">
+        <div class="inner"><a class="video-ended-link" href="#"><i class="fas fa-share"></i></a>
+          <div class="video-repeat-btn">
+            <button class="btn btn-primary" id="videoRepeat">もう一度再生する</button>
           </div>
         </div>
-      </main>
-    <?php else : ?>
-      <?php require_once('./no_content.php') ?>
-    <?php endif; ?>
+      </div>
+    </main>
   </body>
 </html>

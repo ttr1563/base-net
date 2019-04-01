@@ -100,11 +100,7 @@ gulp.task('connect', () => {
   });
 });
 
-gulp.task('disconnect', () => {
-  server.closeServer();
-});
-
-gulp.task('default', ['watch', 'main', 'connect', 'disconnect']);
+gulp.task('default', ['watch', 'main', 'connect']);
 
 
 gulp.task('html', () => {
