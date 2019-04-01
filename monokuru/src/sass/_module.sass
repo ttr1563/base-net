@@ -1,53 +1,3 @@
-.text
-	&-center
-		text-align: center
-
-	&-right
-		text-align: right
-
-	&-left
-		text-align: left
-
-.img-responsive
-    max-width: 100%
-    height: auto
-
-    &.center-block
-        display: block
-        margin:
-            left: auto
-            right: auto
-
-
-.glitch
-	position: relative
-
-	&::after
-		animation: noise-anim 2s infinite linear alternate-reverse
-		background: black
-		clip: rect(0, 900px, 0, 0)
-		color: white
-		content: attr(data-text)
-		left: 2px
-		overflow: hidden
-		position: absolute
-		text-shadow: -1px 0 #ff4500
-		top: 0
-
-	&::before
-		animation: noise-anim-2 3s infinite linear alternate-reverse
-		background: black
-		clip: rect(0, 900px, 0, 0)
-		color: white
-		content: attr(data-text)
-		left: -2px
-		overflow: hidden
-		position: absolute
-		text-shadow: 1px 0 #008080
-		top: 0
-
-	
-
 
 //行間調整用class
 @for $i from 0 through 20
@@ -59,24 +9,24 @@
 
     .mr#{$i * 5}
         margin-right: 5px * $i
-    
+
     .mb#{$i * 5}
         margin-bottom: 5px * $i
-    
+
     .ml#{$i * 5}
         margin-left: 5px * $i
-    
+
     .pd#{$i * 5}
         padding: 5px * $i
-    
+
     .pt#{$i * 5}
         padding-top: 5px * $i
-    
+
     .pr#{$i * 5}
         padding-right: 5px * $i
-    
+
     .pb#{$i * 5}
         padding-bottom: 5px * $i
-    
+
     .pl#{$i * 5}
         padding-left: 5px * $i
