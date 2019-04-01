@@ -20,8 +20,8 @@ html(lang="ja")
         link(rel="icon", sizes="32x32", href="./dist/images/common/favicon.png")
         link(rel="stylesheet", href="./dist/css/theme.css")
         link(rel="stylesheet", href="./dist/css/font-awesome.css")
-        link(rel="stylesheet", href="./dist/css/application.css")
         link(rel="stylesheet",href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css",integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T",crossorigin="anonymous")
+        link(rel="stylesheet", href="./dist/css/pages-monokuru.css")
         script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js", integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo", crossorigin="anonymous", defer)
         script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js", integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1", crossorigin="anonymous", defer)
         script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js", integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM", crossorigin="anonymous", defer)
@@ -103,6 +103,7 @@ html(lang="ja")
                   a(href="https://www.base-net.co.jp/business") 事業内容
                 li#menu-item-886.recruitbtn.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-886
                   a(target="_blank" href="http://base-net.co.jp/recruit/") 採用情報
+
         .container.menubar
           span.mobile-nav-icon
             i.menu-icon
@@ -155,240 +156,248 @@ html(lang="ja")
                       i.fa.fa-angle-double-right
                       li ヒトクル
 
-                .row.p-section-01
-                  .col.col-12
-                    .text-center.d-none.d-md-block
+                .p-section-01
+                  .row
+                    .col.col-12
+                      .text-center.d-none.d-md-block
+                        p.mb0
+                          img(src="./dist/images/pc/section01_title_01.png", class="img-fluid", alt="チャットボット採用で求人応募数UP")
+                        p.mb0
+                          img(src="./dist/images/pc/section01_title_02.png", class="img-fluid", alt="ヒトクル 企業の求人募集に、学校のオープンキャンパスの生徒募集に")
+
+                    .text-center.d-block.d-md-none
                       p.mb0
-                        img(src="./dist/images/pc/section01_title_01.png", class="img-fluid", alt="チャットボット採用で求人応募数UP")
+                        img(src="./dist/images/sp/section01_title_01.png", class="img-fluid", alt="チャットボット採用で求人応募数UP")
                       p.mb0
-                        img(src="./dist/images/pc/section01_title_02.png", class="img-fluid", alt="ヒトクル 企業の求人募集に、学校のオープンキャンパスの生徒募集に")
+                        img(src="./dist/images/sp/section01_title_02.png", class="img-fluid", alt="ヒトクル 企業の求人募集に、学校のオープンキャンパスの生徒募集に")
 
-                    .text-center.d-block.d-sm-none
-                      p.mb0
-                        img(src="./dist/images/pc/section01_title_01.png", class="img-fluid", alt="チャットボット採用で求人応募数UP")
-                      p.mb0
-                        img(src="./dist/images/pc/section01_title_01.png", class="img-fluid", alt="ヒトクル 企業の求人募集に、学校のオープンキャンパスの生徒募集に")
-
-                .row.p-section-02
-                  .col.col-12.col-md-8.offset-md-2
-                    .c-corner__title.text-center.c-line__solid
-                      | ヒトクルとは?
-
-                    .c-corner__body
-                      | ヒトクルとはLINEのAPIを連動し、求人応募者の面接予約までの過程を全てチャットボットに対応させて、御社の人事部として活用できる「チャットボットツール」です。<br>全てを自動化することにより、
-                      span.c-line__wave
-                         | 働き方改革
-                      | にもつながる新しい形の採用活動です。
-
-                .row.p-section-03
-                  .col.col-12
-                    .c-corner__figure
-                      p.mb0.d-none.d-md-block
-                        img(src="./dist/images/pc/section03_img_01.png", class="img-fluid", alt="")
-
-                      p.mb0.d-block.d-md-none
-                        img(src="./dist/images/sp/section03_img_01.png", class="img-fluid", alt="")
+                .p-section-02
+                  .row
+                    .col.col-12.col-md-8.offset-md-2
+                      .c-corner__title.text-center.c-line__solid
+                        | ヒトクルとは?
 
                       .c-corner__body
-                        | 御社の求人を見て、興味のある方はすぐにエントリーしていただけるかもしれませんが、
-                        | もしいい条件なら、とか今よりやりたい仕事ができる会社なら、、、
-                        | なんてボヤッと考えている、
-                        span.c-line__wave 転職潜在層
-                        | をグルーピングしておくツールはこれまでにありませんでした。
-                        | そんな転職潜在層をLINEという普段使っているツールで囲い込み
-                        | 効果的に企業をアピールし、面接エントリーへと誘導していく仕組みです。
+                        | ヒトクルとはLINEのAPIを連動し、求人応募者の面接予約までの過程を全てチャットボットに対応させて、御社の人事部として活用できる「チャットボットツール」です。<br>全てを自動化することにより、
+                        span.c-line__wave
+                           | 働き方改革
+                        | にもつながる新しい形の採用活動です。
 
-                .row.p-section-04
-                  .col.col-12
-                    .c-corner__title
-                      img(src="./dist/images/pc/section04_title_01.png", alt="チャットボット採用→優れている理由")
+                .p-section-03
+                  .row
+                    .col.col-12
+                      .c-corner__figure
+                        p.mb0.d-none.d-md-block
+                          img(src="./dist/images/pc/section03_img_01.png", class="img-fluid", alt="御社の求人を見て、興味のある方はすぐにエントリーしていただけるかもしれませんが、 もしいい条件なら、とか今よりやりたい仕事ができる会社なら、、、 なんてボヤッと考えている、転職潜在層をグルーピングしておくツールはこれまでにありませんでした。 そんな転職潜在層をLINEという普段使っているツールで囲い込み 効果的に企業をアピールし、面接エントリーへと誘導していく仕組みです。")
 
-                    dl.list-unstyled
-                      dt
-                        img(src="./dist/images/pc/section04_number_01.png", alt="その１")
-                      dd
-                        strong.c-list__title
-                          | 24時間365日｡ <br>チャットボットは眠らない！
-                        span.c-list__body
-                          | 思い立ったらエントリー！それが土日でも深夜でも。
-                          | チャットボットは眠らないので、24時間265日御社のスタッフとして応募者に対応してくれます。
+                        p.mb0.d-block.d-md-none
+                          img(src="./dist/images/sp/section03_img_01.png", class="img-fluid", alt="御社の求人を見て、興味のある方はすぐにエントリーしていただけるかもしれませんが、 もしいい条件なら、とか今よりやりたい仕事ができる会社なら、、、 なんてボヤッと考えている、転職潜在層をグルーピングしておくツールはこれまでにありませんでした。 そんな転職潜在層をLINEという普段使っているツールで囲い込み 効果的に企業をアピールし、面接エントリーへと誘導していく仕組みです。")
 
-                    dl.list-unstyled
-                      dt
-                        img(src="./dist/images/pc/section04_number_02.png", alt="その2")
-                      dd
-                        strong.c-list__title
-                          | 面接前､ 面接後のフォローも全自動！
-                        span.c-list__body
-                          | 面接設定日の3日前に来社確認メッセージを自動送信。
-                          | 当日になって応募者が面接に来ない！？なんてことから解放されます。
-                          | 面接後も面接の所管をボットが自動でリスニングし、入社意思などホンネを確認できます。
+                        .c-corner__body
+                          | 御社の求人を見て、興味のある方はすぐにエントリーしていただけるかもしれませんが、
+                          | もしいい条件なら、とか今よりやりたい仕事ができる会社なら、、、
+                          | なんてボヤッと考えている、
+                          span.c-line__wave 転職潜在層
+                          | をグルーピングしておくツールはこれまでにありませんでした。
+                          | そんな転職潜在層をLINEという普段使っているツールで囲い込み
+                          | 効果的に企業をアピールし、面接エントリーへと誘導していく仕組みです。
 
-                    dl.list-unstyled
-                      dt
-                        img(src="./dist/images/pc/section04_number_03.png", alt="その3")
-                      dd
-                        strong.c-list__title
-                          | ｢顕在層｣ではなく､ 興味はあるけどもう少し様子をみたい<br>｢潜在層｣をつなぎとめる自社ツールを獲得できる！
-                        span.c-list__body
-                          | 御社に興味のある方のみがLINEに友だち追加するので、
-                          | 急な欠員が出ても、スピーディーに求人情報を配信できるのも、オウンドメディアの特徴です。
+                .p-section-04
+                  .row
+                    .col.col-12
+                      .c-corner__title
+                        img(src="./dist/images/pc/section04_title_01.png", alt="チャットボット採用→優れている理由")
 
-                    dl.list-unstyled
-                      dt
-                        img(src="./dist/images/pc/section04_number_04.png", alt="その4")
-                      dd
-                        strong.c-list__title
-                          | チャットボットで人件費削減､<br>中長期的に求人広告費用を削減
-                        span.c-list__body
-                          | いい人が来るかどうかわからない大手求人媒体に出稿し続けるよりも
-                          | 自社の採用プラットフォームに投資、強化していくことは中長期的には絶対◎
+                      dl.list-unstyled
+                        dt
+                          img(src="./dist/images/pc/section04_number_01.png", alt="その１")
+                        dd
+                          strong.c-list__title
+                            | 24時間365日｡ <br>チャットボットは眠らない！
+                          span.c-list__body
+                            | 思い立ったらエントリー！それが土日でも深夜でも。
+                            | チャットボットは眠らないので、24時間265日御社のスタッフとして応募者に対応してくれます。
 
+                      dl.list-unstyled
+                        dt
+                          img(src="./dist/images/pc/section04_number_02.png", alt="その2")
+                        dd
+                          strong.c-list__title
+                            | 面接前､ 面接後のフォローも全自動！
+                          span.c-list__body
+                            | 面接設定日の3日前に来社確認メッセージを自動送信。
+                            | 当日になって応募者が面接に来ない！？なんてことから解放されます。
+                            | 面接後も面接の所管をボットが自動でリスニングし、入社意思などホンネを確認できます。
 
-                .row.p-section-05
-                  .col.col-12
-                    .c-corner__title
-                      img(src="./dist/images/common/section05_title_icon.png", alt="事例共有")
-                      span.c-line__solid
-                        | 事例共有
+                      dl.list-unstyled
+                        dt
+                          img(src="./dist/images/pc/section04_number_03.png", alt="その3")
+                        dd
+                          strong.c-list__title
+                            | ｢顕在層｣ではなく､ 興味はあるけどもう少し様子をみたい<br>｢潜在層｣をつなぎとめる自社ツールを獲得できる！
+                          span.c-list__body
+                            | 御社に興味のある方のみがLINEに友だち追加するので、
+                            | 急な欠員が出ても、スピーディーに求人情報を配信できるのも、オウンドメディアの特徴です。
 
-
-                    .c-corner__body
-                      .text-center
-                        p.p-section05__upper
-                          img(src="./dist/images/pc/section05_img_01.png", class="img-responsive", alt="")
-                        p.p-section05__icon
-                          img(src="./dist/images/common/parts_down.png", class="img-responsive", alt="")
-                        p.p-section05__downer
-                          img(src="./dist/images/pc/section05_img_02.png", class="img-responsive", alt="")
-
-                .row.p-section-06
-                  .col.col-12.col-md-8.offset-md-2
-                    .c-corner__title.text-center.c-line__solid
-                      | ご利用料金
-
-                    .c-corner__body
-                      p
-                        img(src="./dist/images/pc/section06_img_01.png", alt="チャットボット初期設定 30万円〜 チャットボットのシナリオ分岐の階層が深い場合、初期費用は要相談となります。")
-                      p
-                        img(src="./dist/images/pc/section06_img_02.png", alt="月額システム利用料5万円/月")
-
-                .row.p-section-07
-                  .col.col-12
-                    .c-corner__title
-                      img(src="./dist/images/common/section07_title_icon.png", alt="その他の求人関連サービス")
-                      | その他の求人関連サービス
-
-                  .col.col-12.col-md-8.offset-md-2
-                    .row.justify-content-center.align-items-stretch
-                      .c-panel.col-10.offset-1.col-md-5.offset-md-0
-                        .c-panel__header
-                          img(src="./dist/images/pc/section07_img_01.jpg", alt="")
-                        .c-panel__body
-                          strong
-                            | 求人特設サイト制作
-                          p
-                            | 求人に特化したウェブサイトの作成を承ります。
-                            | indeedやGoogle for jobs対応はお任せください。
-
-                      .c-panel.col-10.offset-1.col-md-5.offset-md-0
-                        .c-panel__header
-                          img(src="./dist/images/pc/section07_img_02.jpg", alt="")
-                        .c-panel__body
-                          strong
-                            | 求人媒体出稿
-                          p
-                            | 各種求人媒体のご出稿も当社にお任せください。
-                            | 御社にあった採用戦略をご提案します。
+                      dl.list-unstyled
+                        dt
+                          img(src="./dist/images/pc/section04_number_04.png", alt="その4")
+                        dd
+                          strong.c-list__title
+                            | チャットボットで人件費削減､<br>中長期的に求人広告費用を削減
+                          span.c-list__body
+                            | いい人が来るかどうかわからない大手求人媒体に出稿し続けるよりも
+                            | 自社の採用プラットフォームに投資、強化していくことは中長期的には絶対◎
 
 
+                .p-section-05
+                  .row
+                    .col.col-12
+                      .c-corner__title
+                        img(src="./dist/images/common/section05_title_icon.png", alt="事例共有")
+                        span.c-line__solid
+                          | 事例共有
 
-                .row.contactpagouterewrap
-                  .col.col-12
-                    .col-inner
-                      section.w-section.s-padding.w-full.contactpagewrap
-                        .row
-                          .col.col-12
-                              .c-corner__title
-                                | お問い合わせ
 
-                              .c-corner__body
-                                | まずは、お気軽にお問い合わせください。
-                              .w-text-block
-                                  #wpcf7-f4-o1.wpcf7(role="form" lang="ja" dir="ltr")
-                                    .screen-reader-response
-                                    form.wpcf7-form(action="/contact#wpcf7-f4-o1" method="post" novalidate="novalidate" wpcf7c="4" step="1")
-                                      div(style="display: none;")
-                                        input(type="hidden" name="_wpcf7" value="4")
-                                        input(type="hidden" name="_wpcf7c" value="step1")
-                                        input(type="hidden" name="_wpcf7_version" value="5.0.5")
-                                        input(type="hidden" name="_wpcf7_locale" value="ja")
-                                        input(type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f4-o1")
-                                        input(type="hidden" name="_wpcf7_container_post" value="0")
-                                      table.table-contactform7
-                                        tbody
-                                          tr
-                                            th.required
-                                              span.title-contactform7 御社名
-                                              span.required-contactform7 必須
-                                            td
-                                              span.wpcf7-form-control-wrap.text-76
-                                                input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required(type="text" name="text-76" value="" size="40" aria-required="true" aria-invalid="false")
-                                          tr
-                                            th.required
-                                              span.title-contactform7 ご担当者名
-                                              span.required-contactform7 必須
-                                            td
-                                              span.wpcf7-form-control-wrap.your-name
-                                                input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required(type="text" name="your-name" value="" size="40" aria-required="true" aria-invalid="false")
-                                          tr
-                                            th.required
-                                              span.title-contactform7 メールアドレス
-                                              span.required-contactform7 必須
-                                            td.address-100
-                                              span.wpcf7-form-control-wrap.your-email
-                                                input.wpcf7-form-control.wpcf7-text.wpcf7-email.wpcf7-validates-as-required.wpcf7-validates-as-email(type="email" name="your-email" value="" size="40" aria-required="true" aria-invalid="false")
-                                          tr
-                                            th
-                                              span.title-contactform7 電話番号
-                                            td
-                                              span.wpcf7-form-control-wrap.text-77
-                                                input.wpcf7-form-control.wpcf7-text(type="text" name="text-77" value="" size="40" aria-invalid="false")
-                                          tr
-                                            th
-                                              span.title-contactform7 住所
-                                            td
-                                              | 〒
-                                              span.wpcf7-form-control-wrap.zip
-                                                input#zip.wpcf7-form-control.wpcf7-text.zipcode(type="text" name="zip" value="" size="7" maxlength="7" aria-invalid="false" onkeyup="AjaxZip3.zip2addr(this,'','address','address');")
-                                              span.zipattention ※住所自動入力（ハイフンなし）
-                                              br
-                                              span.wpcf7-form-control-wrap.address
-                                                input#address.wpcf7-form-control.wpcf7-text(type="text" name="address" value="" size="80" aria-invalid="false")
+                      .c-corner__body
+                        .text-center
+                          p.p-section05__upper
+                            img(src="./dist/images/pc/section05_img_01.png", class="img-responsive", alt="")
+                          p.p-section05__icon
+                            img(src="./dist/images/common/parts_down.png", class="img-responsive", alt="")
+                          p.p-section05__downer
+                            img(src="./dist/images/pc/section05_img_02.png", class="img-responsive", alt="")
+
+                .p-section-06
+                  .row
+                    .col.col-12.col-md-8.offset-md-2
+                      .c-corner__title.text-center.c-line__solid
+                        | ご利用料金
+
+                      .c-corner__body
+                        p
+                          img(src="./dist/images/pc/section06_img_01.png", alt="チャットボット初期設定 30万円〜 チャットボットのシナリオ分岐の階層が深い場合、初期費用は要相談となります。")
+                        p
+                          img(src="./dist/images/pc/section06_img_02.png", alt="月額システム利用料5万円/月")
+
+                .p-section-07
+                  .row
+                    .col.col-12
+                      .c-corner__title
+                        img(src="./dist/images/common/section07_title_icon.png", alt="その他の求人関連サービス")
+                        | その他の求人関連サービス
+
+                    .col.col-12.col-md-8.offset-md-2
+                      .row.justify-content-center.align-items-stretch
+                        .c-panel.col-10.offset-1.col-md-5.offset-md-0
+                          .c-panel__header
+                            img(src="./dist/images/pc/section07_img_01.jpg", alt="")
+                          .c-panel__body
+                            strong
+                              | 求人特設サイト制作
+                            p
+                              | 求人に特化したウェブサイトの作成を承ります。
+                              | indeedやGoogle for jobs対応はお任せください。
+
+                        .c-panel.col-10.offset-1.col-md-5.offset-md-0
+                          .c-panel__header
+                            img(src="./dist/images/pc/section07_img_02.jpg", alt="")
+                          .c-panel__body
+                            strong
+                              | 求人媒体出稿
+                            p
+                              | 各種求人媒体のご出稿も当社にお任せください。
+                              | 御社にあった採用戦略をご提案します。
+
+
+
+                .contactpagouterewrap
+                  .row
+                    .col.col-12
+                      .col-inner
+                        section.w-section.s-padding.w-full.contactpagewrap
+                          .row
+                            .col.col-12
+                                .c-corner__title
+                                  | お問い合わせ
+
+                                .c-corner__body
+                                  | まずは、お気軽にお問い合わせください。
+                                .w-text-block
+                                    #wpcf7-f4-o1.wpcf7(role="form" lang="ja" dir="ltr")
+                                      .screen-reader-response
+                                      form.wpcf7-form(action="/contact#wpcf7-f4-o1" method="post" novalidate="novalidate" wpcf7c="4" step="1")
+                                        div(style="display: none;")
+                                          input(type="hidden" name="_wpcf7" value="4")
+                                          input(type="hidden" name="_wpcf7c" value="step1")
+                                          input(type="hidden" name="_wpcf7_version" value="5.0.5")
+                                          input(type="hidden" name="_wpcf7_locale" value="ja")
+                                          input(type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f4-o1")
+                                          input(type="hidden" name="_wpcf7_container_post" value="0")
+                                        table.table-contactform7
+                                          tbody
+                                            tr
+                                              th.required
+                                                span.title-contactform7 御社名
+                                                span.required-contactform7 必須
+                                              td
+                                                span.wpcf7-form-control-wrap.text-76
+                                                  input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required(type="text" name="text-76" value="" size="40" aria-required="true" aria-invalid="false")
+                                            tr
+                                              th.required
+                                                span.title-contactform7 ご担当者名
+                                                span.required-contactform7 必須
+                                              td
+                                                span.wpcf7-form-control-wrap.your-name
+                                                  input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required(type="text" name="your-name" value="" size="40" aria-required="true" aria-invalid="false")
+                                            tr
+                                              th.required
+                                                span.title-contactform7 メールアドレス
+                                                span.required-contactform7 必須
+                                              td.address-100
+                                                span.wpcf7-form-control-wrap.your-email
+                                                  input.wpcf7-form-control.wpcf7-text.wpcf7-email.wpcf7-validates-as-required.wpcf7-validates-as-email(type="email" name="your-email" value="" size="40" aria-required="true" aria-invalid="false")
+                                            tr
+                                              th
+                                                span.title-contactform7 電話番号
+                                              td
+                                                span.wpcf7-form-control-wrap.text-77
+                                                  input.wpcf7-form-control.wpcf7-text(type="text" name="text-77" value="" size="40" aria-invalid="false")
+                                            tr
+                                              th
+                                                span.title-contactform7 住所
+                                              td
+                                                | 〒
+                                                span.wpcf7-form-control-wrap.zip
+                                                  input#zip.wpcf7-form-control.wpcf7-text.zipcode(type="text" name="zip" value="" size="7" maxlength="7" aria-invalid="false" onkeyup="AjaxZip3.zip2addr(this,'','address','address');")
+                                                span.zipattention ※住所自動入力（ハイフンなし）
+                                                br
+                                                span.wpcf7-form-control-wrap.address
+                                                  input#address.wpcf7-form-control.wpcf7-text(type="text" name="address" value="" size="80" aria-invalid="false")
+                                                p
+                                            tr
+                                              th.messagewrap
+                                                span.title-contactform7 お問い合わせ内容
+                                              td.message-100
+                                                span.wpcf7-form-control-wrap.your-message
+                                                  textarea.wpcf7-form-control.wpcf7-textarea(name="your-message" cols="40" rows="10" aria-invalid="false")
+                                        .col.col-12
+                                          .col-inner
+                                            .col.col-1.hidden-md.hidden-sm.hidden-xs
+                                              .col-inner
                                               p
-                                          tr
-                                            th.messagewrap
-                                              span.title-contactform7 お問い合わせ内容
-                                            td.message-100
-                                              span.wpcf7-form-control-wrap.your-message
-                                                textarea.wpcf7-form-control.wpcf7-textarea(name="your-message" cols="40" rows="10" aria-invalid="false")
-                                      .col.col-12
-                                        .col-inner
-                                          .col.col-1.hidden-md.hidden-sm.hidden-xs
-                                            .col-inner
+                                            .col.col-10.col-lg-10.col-md-12.text-center.table-contactform7-submit
+                                              input.wpcf7-form-control.wpcf7-confirm.confirm.wpcf7c-elm-step1.wpcf7c-btn-confirm(type="submit" value="ご記入内容を確認する")
+                                              input.wpcf7-form-control.wpcf7-back.back.wpcf7c-elm-step2.wpcf7c-btn-back.wpcf7c-force-hide(type="button" value="戻って編集")
+                                              input.wpcf7-form-control.wpcf7-submit.wpcf7c-elm-step2.wpcf7c-force-hide(type="submit" value="送信")
+                                              span.ajax-loader
+                                            .col.col-1.hidden-md.hidden-sm.hidden-xs
+                                              .col-inner
+                                              p
                                             p
-                                          .col.col-10.col-lg-10.col-md-12.text-center.table-contactform7-submit
-                                            input.wpcf7-form-control.wpcf7-confirm.confirm.wpcf7c-elm-step1.wpcf7c-btn-confirm(type="submit" value="ご記入内容を確認する")
-                                            input.wpcf7-form-control.wpcf7-back.back.wpcf7c-elm-step2.wpcf7c-btn-back.wpcf7c-force-hide(type="button" value="戻って編集")
-                                            input.wpcf7-form-control.wpcf7-submit.wpcf7c-elm-step2.wpcf7c-force-hide(type="submit" value="送信")
-                                            span.ajax-loader
-                                          .col.col-1.hidden-md.hidden-sm.hidden-xs
-                                            .col-inner
-                                            p
-                                          p
-                                      .wpcf7-response-output.wpcf7-display-none
-                              .col.col-1.hidden-md.hidden-sm.hidden-xs
-                                .col-inner  
+                                        .wpcf7-response-output.wpcf7-display-none
+                                .col.col-1.hidden-md.hidden-sm.hidden-xs
+                                  .col-inner  
 
 
       footer#footer(style="position:relative;display:block;")
