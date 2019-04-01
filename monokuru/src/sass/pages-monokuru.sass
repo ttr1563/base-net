@@ -15,3 +15,213 @@ img
 	max-width: 100%
 	height: auto
 
+#hitokuru
+	// base
+
+	.c-line__solid
+		border-bottom: 2px solid $white
+		padding-bottom: 8px
+
+	.c-line__wave
+		display: inline-block
+		position: relative
+
+		&::after
+			content: ""
+			background:
+				image: url("../images/common/parts_underline_wavy_w.png")
+				repeat: repeat
+				position: left center
+				size: auto 8px
+			height: 6px
+			width: 100%
+			position: absolute
+			left: 0
+			bottom: -4px
+
+	.c-corner__title
+		font-size: 36px
+
+	.c-corner__body
+		line-height: 2.0
+
+	// section毎のcss
+	.p-section-01,
+	.p-section-02,
+	.p-section-03,
+	.p-section-04,
+	.p-section-05,
+	.p-section-06,
+	.p-section-07,
+	.contactpagouterewrap
+		@media screen and (min-width: $screen-md)
+			> .row
+				max-width: 970px
+				margin:
+					left: auto
+					right: auto
+
+	.p-section-01,
+	.p-section-03,
+	.p-section-05,
+	.p-section-07
+		padding:
+				top: 30px
+				bottom: 30px
+
+		@media screen and (min-width: $screen-md)
+			padding:
+				top: 100px
+				bottom: 100px
+
+	.p-section-02,
+	.p-section-04,
+	.p-section-06
+		background-color: $dark-green
+		padding:
+			top: 40px
+			bottom: 45px
+
+		.c-corner__title
+			text-align: center
+			margin-bottom: 18px
+			@media screen and (min-width: $screen-md)
+				margin-bottom: 36px
+
+			h2
+				color: $white
+				font-weight: bold
+				display: inline-block
+
+	.p-section-02,
+	.p-section-06
+		background:
+			image: url('../images/common/parts_bg_section.png')
+			size: 200px auto
+			position: center -5px
+
+	.p-section-02
+		.c-corner__body
+			color: $white
+			font-weight: bold
+
+	.p-section-03
+		.c-line__wave
+			&::after
+				background-image: url('../images/common/parts_underline_wavy.png')
+		.c-corner__figure
+			margin-bottom: 40px
+
+			@media screen and (min-width: $screen-md)
+				margin-bottom: 75px
+
+		.c-corner__body
+			font-weight: bold
+
+
+	.contactpagouterewrap
+		background-color: $ex-light-gray
+		padding:
+			top: 35px
+			bottom: 120px
+
+		@media screen and (min-width: $screen-md)
+			padding:
+				top: 68px
+				bottom: 300px
+
+		.c-corner__title
+			font:
+				weight: bold
+				size: 21px
+			margin-bottom: 33px
+			padding-bottom: 20px
+			position: relative
+
+			@media screen and (min-width: $screen-md)
+				font-size: 28px
+				margin-bottom: 60px
+				padding-bottom: 30px
+
+
+			&::after
+				content: ""
+				height: 4px
+				width: 80px
+				display: block
+				position: absolute
+				left: 50%
+				bottom: 0
+				transform: translateX(-50%)
+				background:
+						image: repeating-linear-gradient(90deg, #ffd309, #ffd309 20px, #ff8502 20px, #ff8502 45px, #3ebc2b 45px, #3ebc2b 70px)
+						position: 15px
+
+		.c-corner__body
+			margin-bottom: 40px
+
+			@media screen and (min-width: $screen-md)
+				margin-bottom: 90px
+
+
+		table.table-contactform7
+			@media screen and (min-width: $screen-md)
+				margin-bottom: 55px
+
+			tr
+				border-top: 2px solid $green
+				padding: 0!important
+
+				&:last-child
+					border-bottom: 2px solid $green
+
+					th,
+					td
+						border-bottom: none
+
+			th,
+			td
+				padding: 17px 21px
+
+			th
+				background-color: $green
+				border-bottom: 1px solid $white
+				color: $white
+				text:
+					align: left
+					shadow: none
+
+				@media screen and (min-width: $screen-md)
+					text-align: right
+
+			td
+				background-color: $white
+				border-bottom: 1px solid $green
+
+			.required-contactform7
+				background-color: $white
+				border:
+					radius: 3px
+					color: transparent
+				color: $green
+				font-size: 11px
+				padding: 3px
+				vertical-align: middle
+
+				@media screen and (max-width: $screen-md)
+					padding: 0 3px
+					float: none
+
+		button,
+		input[type="submit"],
+		input[type="button"],
+		input[type="reset"]
+			background-color: transparent
+			border: none
+
+			img
+				@media screen and (max-width: $screen-md)
+					width: 158px
+					height: auto
+
+

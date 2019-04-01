@@ -159,7 +159,7 @@ html(lang="ja")
                 .p-section-01
                   .row
                     .col.col-12
-                      .text-center.d-none.d-md-block
+                      h1.text-center.d-none.d-md-block
                         p.mb0
                           img(src="./dist/images/pc/section01_title_01.png", class="img-fluid", alt="チャットボット採用で求人応募数UP")
                         p.mb0
@@ -172,10 +172,11 @@ html(lang="ja")
                         img(src="./dist/images/sp/section01_title_02.png", class="img-fluid", alt="ヒトクル 企業の求人募集に、学校のオープンキャンパスの生徒募集に")
 
                 .p-section-02
-                  .row
-                    .col.col-12.col-md-8.offset-md-2
-                      .c-corner__title.text-center.c-line__solid
-                        | ヒトクルとは?
+                  .row.justify-content-center
+                    .col.col-12.col-md-9
+                      .c-corner__title
+                        h2.text-center.c-line__solid
+                          | ヒトクルとは?
 
                       .c-corner__body
                         | ヒトクルとはLINEのAPIを連動し、求人応募者の面接予約までの過程を全てチャットボットに対応させて、御社の人事部として活用できる「チャットボットツール」です。<br>全てを自動化することにより、
@@ -193,20 +194,26 @@ html(lang="ja")
                         p.mb0.d-block.d-md-none
                           img(src="./dist/images/sp/section03_img_01.png", class="img-fluid", alt="御社の求人を見て、興味のある方はすぐにエントリーしていただけるかもしれませんが、 もしいい条件なら、とか今よりやりたい仕事ができる会社なら、、、 なんてボヤッと考えている、転職潜在層をグルーピングしておくツールはこれまでにありませんでした。 そんな転職潜在層をLINEという普段使っているツールで囲い込み 効果的に企業をアピールし、面接エントリーへと誘導していく仕組みです。")
 
-                        .c-corner__body
+                      .c-corner__body.d-flex.justify-content-center
+                        .col.col-12.col-md-9
                           | 御社の求人を見て、興味のある方はすぐにエントリーしていただけるかもしれませんが、
+                          br
                           | もしいい条件なら、とか今よりやりたい仕事ができる会社なら、、、
+                          br
                           | なんてボヤッと考えている、
                           span.c-line__wave 転職潜在層
                           | をグルーピングしておくツールはこれまでにありませんでした。
+                          br
                           | そんな転職潜在層をLINEという普段使っているツールで囲い込み
+                          br
                           | 効果的に企業をアピールし、面接エントリーへと誘導していく仕組みです。
 
                 .p-section-04
                   .row
                     .col.col-12
                       .c-corner__title
-                        img(src="./dist/images/pc/section04_title_01.png", alt="チャットボット採用→優れている理由")
+                        h2
+                          img(src="./dist/images/pc/section04_title_01.png", alt="チャットボット採用→優れている理由")
 
                       dl.list-unstyled
                         dt
@@ -254,9 +261,10 @@ html(lang="ja")
                   .row
                     .col.col-12
                       .c-corner__title
-                        img(src="./dist/images/common/section05_title_icon.png", alt="事例共有")
-                        span.c-line__solid
-                          | 事例共有
+                        h2
+                          img(src="./dist/images/common/section05_title_icon.png", alt="事例共有")
+                          span.c-line__solid
+                            | 事例共有
 
 
                       .c-corner__body
@@ -271,8 +279,9 @@ html(lang="ja")
                 .p-section-06
                   .row
                     .col.col-12.col-md-8.offset-md-2
-                      .c-corner__title.text-center.c-line__solid
-                        | ご利用料金
+                      .c-corner__title
+                        h2.text-center.c-line__solid
+                          | ご利用料金
 
                       .c-corner__body
                         p
@@ -284,8 +293,9 @@ html(lang="ja")
                   .row
                     .col.col-12
                       .c-corner__title
-                        img(src="./dist/images/common/section07_title_icon.png", alt="その他の求人関連サービス")
-                        | その他の求人関連サービス
+                        h2
+                          img(src="./dist/images/common/section07_title_icon.png", alt="その他の求人関連サービス")
+                          | その他の求人関連サービス
 
                     .col.col-12.col-md-8.offset-md-2
                       .row.justify-content-center.align-items-stretch
@@ -319,10 +329,12 @@ html(lang="ja")
                           .row
                             .col.col-12
                                 .c-corner__title
-                                  | お問い合わせ
+                                  h2.text-center
+                                    | お問い合わせ
 
-                                .c-corner__body
+                                .c-corner__body.text-center
                                   | まずは、お気軽にお問い合わせください。
+
                                 .w-text-block
                                     #wpcf7-f4-o1.wpcf7(role="form" lang="ja" dir="ltr")
                                       .screen-reader-response
@@ -383,13 +395,9 @@ html(lang="ja")
                                                   textarea.wpcf7-form-control.wpcf7-textarea(name="your-message" cols="40" rows="10" aria-invalid="false")
                                         .col.col-12
                                           .col-inner
-                                            .col.col-1.hidden-md.hidden-sm.hidden-xs
-                                              .col-inner
-                                              p
-                                            .col.col-10.col-lg-10.col-md-12.text-center.table-contactform7-submit
-                                              input.wpcf7-form-control.wpcf7-confirm.confirm.wpcf7c-elm-step1.wpcf7c-btn-confirm(type="submit" value="ご記入内容を確認する")
-                                              input.wpcf7-form-control.wpcf7-back.back.wpcf7c-elm-step2.wpcf7c-btn-back.wpcf7c-force-hide(type="button" value="戻って編集")
-                                              input.wpcf7-form-control.wpcf7-submit.wpcf7c-elm-step2.wpcf7c-force-hide(type="submit" value="送信")
+                                            .col.col-10.offset-1.col-lg-10.offset-lg-1.col-md-12.offset-md-0.text-center.table-contactform7-submit
+                                              button.wpcf7-form-control.wpcf7-submit.wpcf7c-elm-step2.wpcf7c-force-hide(type="submit")
+                                                img(src="./dist/images/common/btn_send.png", alt="送信する")
                                               span.ajax-loader
                                             .col.col-1.hidden-md.hidden-sm.hidden-xs
                                               .col-inner
