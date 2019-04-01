@@ -40,7 +40,10 @@ img
 			bottom: -4px
 
 	.c-corner__title
-		font-size: 36px
+		font-size: 22px
+
+		@media screen and (min-width: $screen-md)
+			font-size: 36px
 
 	.c-corner__body
 		line-height: 2.0
@@ -54,7 +57,15 @@ img
 	.p-section-06,
 	.p-section-07,
 	.contactpagouterewrap
+		padding:
+			left: 30px
+			right: 30px
+
 		@media screen and (min-width: $screen-md)
+			padding:
+				left: 0
+				right: 0
+
 			> .row
 				max-width: 970px
 				margin:
@@ -79,8 +90,13 @@ img
 	.p-section-06
 		background-color: $dark-green
 		padding:
-			top: 40px
-			bottom: 45px
+			top: 35px
+			bottom: 35px
+
+		@media screen and (min-width: $screen-md)
+			padding:
+				top: 60px
+				bottom: 50px
 
 		.c-corner__title
 			text-align: center
