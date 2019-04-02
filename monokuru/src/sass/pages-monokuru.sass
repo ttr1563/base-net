@@ -48,6 +48,75 @@ img
 	.c-corner__body
 		line-height: 2.0
 
+	.c-detail__list
+		margin-top: 20px
+
+		@media screen and (min-width: $screen-md)
+			margin-top: 50px
+
+		dt
+			width: 35%
+			@media screen and (min-width: $screen-md)
+				width: 170px
+
+		dd
+			font-size: 14px
+			text-align: left
+			line-height: 2.0
+
+			.c-list__title
+				color: $white
+				display: block
+				line-height: 1.2
+				font:
+					weight: bold
+					size: 21px
+				@media screen and (min-width: $screen-md)
+					margin-bottom: 20px
+
+				@media screen and (min-width: $screen-md)
+					font-size: 32px
+
+		dd:not(.p-splist__body)
+			width: 65%
+
+			@media screen and (min-width: $screen-md)
+				width: calc(100% - 170px)
+
+	.c-panel
+		background-color: $ex-light-gray
+		margin-bottom: $grid-gutter-width
+		padding: 13px
+
+		@media screen and (min-width: $screen-md)
+			padding: 24px
+			margin:
+				left: $grid-gutter-width
+				bottom: 0
+
+		.c-panel__header
+			margin-bottom: 20px
+
+		.c-panel__body
+			font-size: 16px
+			line-height: 2.0
+
+			strong
+				color: $dark-green
+				font:
+					size: 19px
+					weight: bold
+				display: block
+				line-height: 1.0
+				text-align: center
+				margin-bottom: 20px
+
+				@media screen and (min-width: $screen-md)
+					font-size: 24px
+
+
+
+
 	// section毎のcss
 	.p-section-01,
 	.p-section-02,
@@ -133,6 +202,69 @@ img
 
 		.c-corner__body
 			font-weight: bold
+
+	.p-section-04
+		.c-corner__title
+			img
+				@media screen and (max-width: $screen-md)
+					max-width: 300px
+
+	.p-section-05
+		.c-corner__title
+			margin-bottom: 20px
+
+			@media screen and (min-width: $screen-md)
+				margin-bottom: 30px
+
+			h2
+				color: $dark-green
+				font-weight: bold
+
+			img
+				vertical-align: middle
+
+		.c-line__solid
+			border:
+				color: $dark-green
+				width: 2px
+
+			@media screen and (min-width: $screen-md)
+				border-width: 4px
+
+		.p-section05__icon
+			margin:
+				top: 16px
+				bottom: -8px
+
+	.p-section-06
+		img
+			margin-bottom: $grid-gutter-width * .5
+
+			@media screen and (min-width: $screen-md)
+				margin-bottom: $grid-gutter-width
+
+			&:first-child
+				margin-top: 0
+
+	.p-section-07
+		.c-corner__title
+			margin-bottom: 20px
+
+			@media screen and (min-width: $screen-md)
+				margin-bottom: 40px
+
+			img
+				vertical-align: middle
+				margin-right: 8px
+
+			h2
+				color: $dark-green
+				font:
+					size: 19px
+					weight: bold
+
+				@media screen and (min-width: $screen-md)
+					font-size: 28px
 
 
 	.contactpagouterewrap
