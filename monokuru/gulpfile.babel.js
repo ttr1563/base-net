@@ -76,7 +76,7 @@ gulp.task('sass', () => {
   gulp.src(paths.sass)
     .pipe(plumber(plumberOption))
     .pipe(sass({
-      outputStyle: 'compressed',
+      outputStyle: 'expanded',
     }).on('error', sass.logError))
     .pipe(postcss(processors))
     .pipe(gulp.dest(paths.css));

@@ -40,13 +40,30 @@ img
 			bottom: -4px
 
 	.c-corner__title
-		font-size: 22px
+		h2
+			font-size: 22px
 
-		@media screen and (min-width: $screen-md)
-			font-size: 36px
+			@media screen and (min-width: $screen-md)
+				font-size: 36px
 
 	.c-corner__body
 		line-height: 2.0
+
+		@media screen and (max-width: $screen-md)
+			.col-1,
+			.col-2,
+			.col-3,
+			.col-4,
+			.col-5,
+			.col-6,
+			.col-7,
+			.col-8,
+			.col-9,
+			.col-10,
+			.col-11,
+			.col-12,
+			.five-cols
+				text-align: left
 
 	.c-detail__list
 		margin-top: 20px
@@ -71,8 +88,11 @@ img
 				font:
 					weight: bold
 					size: 21px
+				padding-left: 8px
+
 				@media screen and (min-width: $screen-md)
 					margin-bottom: 20px
+					padding-left: 0
 
 				@media screen and (min-width: $screen-md)
 					font-size: 32px
@@ -115,7 +135,9 @@ img
 					font-size: 24px
 
 
-
+	#content
+		top: 100px
+		padding-bottom: 100px
 
 	// section毎のcss
 	.p-section-01,
@@ -185,10 +207,25 @@ img
 			size: 200px auto
 			position: center -5px
 
+	.p-section-01
+		.line-img
+			margin:
+					left: -30px
+					right: -30px
+					bottom: 30px
+
+			@media screen and (min-width: $screen-md)
+				margin:
+					left: 0
+					right: 0
+
 	.p-section-02
 		.c-corner__body
 			color: $white
 			font-weight: bold
+
+			@media screen and (max-width: $screen-md)
+				text-align: left
 
 	.p-section-03
 		.c-line__wave
@@ -208,6 +245,7 @@ img
 			img
 				@media screen and (max-width: $screen-md)
 					max-width: 300px
+					width: 100%
 
 	.p-section-05
 		.c-corner__title
