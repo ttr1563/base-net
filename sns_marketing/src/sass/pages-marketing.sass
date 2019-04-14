@@ -42,6 +42,7 @@ img
 	.c-corner__title
 		h2
 			font-size: 22px
+			text-align: center
 
 			@media screen and (min-width: $screen-md)
 				font-size: 36px
@@ -67,72 +68,47 @@ img
 
 	.c-detail__list
 		margin-top: 20px
+		position: relative
 
 		@media screen and (min-width: $screen-md)
 			margin-top: 50px
 
 		dt
-			width: 35%
-			@media screen and (min-width: $screen-md)
-				width: 170px
+			position: absolute
+			left: 0
+			top: 0
+			z-index: 1
 
 		dd
 			font-size: 14px
 			text-align: left
 			line-height: 2.0
 
-			.c-list__title
-				color: $white
-				display: block
-				line-height: 1.2
-				font:
-					weight: bold
-					size: 21px
-				padding-left: 8px
-
-				@media screen and (min-width: $screen-md)
-					margin-bottom: 20px
-					padding-left: 0
-
-				@media screen and (min-width: $screen-md)
-					font-size: 32px
-
-		dd:not(.p-splist__body)
-			width: 65%
-
-			@media screen and (min-width: $screen-md)
-				width: calc(100% - 170px)
-
 	.c-panel
-		background-color: $ex-light-gray
+		background-color: $white
+		border: 4px solid $light-blue
+		border-radius: 6px
+		height: 100%
+		min-height: 320px
 		margin-bottom: $grid-gutter-width
 		padding: 13px
 
 		@media screen and (min-width: $screen-md)
 			padding: 24px
 			margin:
-				left: $grid-gutter-width
 				bottom: 0
 
 		.c-panel__header
+			font-size: 11px
 			margin-bottom: 20px
+			text-align: center
+
+			@media screen and (min-width: $screen-md)
+				font-size: 14px
 
 		.c-panel__body
 			font-size: 16px
 			line-height: 2.0
-
-			strong
-				color: $dark-green
-				font:
-					size: 19px
-					weight: bold
-				display: block
-				line-height: 1.0
-				text-align: center
-				margin-bottom: 20px
-
-				@media screen and (min-width: $screen-md)
-					font-size: 24px
 
 
 	#content
@@ -148,13 +124,17 @@ img
 	.p-section-07,
 	.contactpagouterewrap
 		padding:
+			bottom: 45px
 			left: 30px
 			right: 30px
+			top: 45px
 
 		@media screen and (min-width: $screen-md)
 			padding:
+				bottom: 70px
 				left: 0
 				right: 0
+				top: 70px
 
 			> .row
 				max-width: 970px
@@ -162,48 +142,99 @@ img
 					left: auto
 					right: auto
 
-	.p-section-03,
-	.p-section-05,
-	.p-section-07
-		padding:
-				top: 30px
-				bottom: 30px
 
-		@media screen and (min-width: $screen-md)
-			padding:
-				top: 100px
-				bottom: 100px
-
-	.p-section-02,
 	.p-section-04,
 	.p-section-06
-		background-color: $dark-green
-		padding:
-			top: 35px
-			bottom: 35px
+		background-color: $light-blue
 
-		@media screen and (min-width: $screen-md)
+	.p-section-03,
+	.p-section-05
+		position: relative
+		overflow: hidden
+
+		@media screen and (max-width: $screen-md)
 			padding:
-				top: 60px
-				bottom: 50px
+				top: 90px
+				bottom: 90px
 
-		.c-corner__title
-			text-align: center
-			margin-bottom: 18px
-			@media screen and (min-width: $screen-md)
-				margin-bottom: 36px
+		.p-section_upper,
+		.p-section_downer
+			display: block
+			width: 100%
+			position: absolute
+			left: 0
+			z-index: -1
 
-			h2
-				color: $white
-				font-weight: bold
-				display: inline-block
+			&::before,
+			&::after
+				content: ""
+				position: absolute
 
-	.p-section-02,
-	.p-section-06
-		background:
-			image: url('../images/common/parts_bg_section.png')
-			size: 200px auto
-			position: center -5px
+			&::before
+				left: 0
+
+			&::after
+				right: 0
+
+		.p-section_upper
+			top: 0
+
+			&::before,
+			&::after
+				top: 0
+
+			&::before
+				border:
+					right: 140px solid transparent
+					top: 90px solid $light-blue
+
+				@media screen and (min-width: $screen-md)
+					border:
+						right-width: 280px
+						top-width: 180px
+
+
+			&::after
+				border:
+					left: 140px solid transparent
+					top: 90px solid $light-blue
+
+				@media screen and (min-width: $screen-md)
+					border:
+						left-width: 280px
+						top-width: 180px
+
+		.p-section_downer
+			bottom: 0
+
+			&::before,
+			&::after
+				bottom: 0
+
+			&::before
+				border:
+					right: 140px solid transparent
+					bottom: 90px solid $light-blue
+
+				@media screen and (min-width: $screen-md)
+					border:
+						right-width: 280px
+						bottom-width: 180px
+
+
+			&::after
+				border:
+					left: 140px solid transparent
+					bottom: 90px solid $light-blue
+
+				@media screen and (min-width: $screen-md)
+					border:
+						left-width: 280px
+						bottom-width: 180px
+
+
+
+
 
 	.p-section-02
 		background-color: $ex-light-gray
