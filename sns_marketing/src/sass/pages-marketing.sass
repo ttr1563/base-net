@@ -15,7 +15,7 @@ img
 	max-width: 100%
 	height: auto
 
-#hitokuru
+#snsmarketing
 	// base
 
 	.c-line__solid
@@ -40,6 +40,11 @@ img
 			bottom: -4px
 
 	.c-corner__title
+		margin-bottom: 30px
+
+		@media screen and (min-width: $screen-md)
+			margin-bottom: 40px
+
 		h2
 			font-size: 22px
 			text-align: center
@@ -66,12 +71,16 @@ img
 			.five-cols
 				text-align: left
 
-	.c-detail__list
-		margin-top: 20px
-		position: relative
+	.c-detail__parent
+		@media screen and (max-width: $screen-md)
+			flex-direction: column
+			align-items: center
+			-ms-flex-direction: column
+			-ms-flex-align: stretch
 
-		@media screen and (min-width: $screen-md)
-			margin-top: 50px
+	.c-detail__list
+		margin-top: 30px
+		position: relative
 
 		dt
 			position: absolute
@@ -79,10 +88,22 @@ img
 			top: 0
 			z-index: 1
 
+			@media screen and (max-width: $screen-sm)
+				img
+					width: 157px * .5
+
+			@media screen and (min-width: $screen-sm)
+				left: -10px
+				top: -10px
+
 		dd
 			font-size: 14px
-			text-align: left
+			text-align: center
 			line-height: 2.0
+
+			@media screen and (max-width: $screen-sm)
+				img
+					width: 615px * .5
 
 	.c-panel
 		background-color: $white
@@ -106,9 +127,47 @@ img
 			@media screen and (min-width: $screen-md)
 				font-size: 14px
 
+		.c-panel__header
+			font:
+				weight: 600
+				size: 11px
+			margin-bottom: 25px
+
+			img
+				margin-bottom: 10px
+
+			@media screen and (min-width: $screen-md)
+				font-size: 14px
+				margin-bottom: 35px
+				img
+					margin-bottom: 25px
+
 		.c-panel__body
-			font-size: 16px
+			font:
+				size: 14px
+				weight: 600
 			line-height: 2.0
+			margin-bottom: 25px
+
+			p
+				margin-top: 25px
+
+			@media screen and (min-width: $screen-md)
+				font-size: 16px
+				margin-bottom: 50px
+
+		.m-btn_option
+			border: 2px solid $light-blue
+			display: inline-block
+			font-size: 12px
+			padding: 3px
+			margin:
+				left: 3.5px
+				right: 3.5px
+				bottom: 7px
+
+			@media screen and (min-width: $screen-md)
+				font-size: 16px
 
 
 	#content
@@ -239,17 +298,38 @@ img
 
 	.p-section-02
 		background-color: $ex-light-gray
+
+		.c-corner__title
+			img
+				height: 35px
+
+				@media screen and (min-width: $screen-md)
+					height: auto
+
 		.c-corner__body
 			color: $white
 			font-weight: bold
 
-			@media screen and (max-width: $screen-md)
-				text-align: left
+			.c-corner__figure
+				@media screen and (max-width: $screen-md)
+					margin-top: 30px
+
+					&:first-child
+						margin-top: 0
 
 	.p-section-03
-		.c-line__wave
-			&::after
-				background-image: url('../images/common/parts_underline_wavy.png')
+		.c-corner__title
+			margin-bottom: 40px
+
+			@media screen and (min-width: $screen-md)
+				margin-bottom: 50px
+
+			img
+				height: 157px * .5
+
+				@media screen and (min-width: $screen-md)
+					height: auto
+
 		.c-corner__figure
 			margin-bottom: 40px
 
@@ -268,51 +348,122 @@ img
 
 	.p-section-05
 		.c-corner__title
-			margin-bottom: 20px
+			margin-bottom: 25px
 
 			@media screen and (min-width: $screen-md)
-				margin-bottom: 30px
+				margin-bottom: 50px
 
 			h2
 				color: $dark-green
 				font-weight: bold
 
 			img
-				vertical-align: middle
+				@media screen and (max-width: $screen-md)
+					width: 588px * .5
 
-		.c-line__solid
-			border:
-				color: $dark-green
-				width: 2px
+		.c-corner__figure
+			margin-bottom: 25px
+
+			img
+				width: 615px * .5
 
 			@media screen and (min-width: $screen-md)
-				border-width: 4px
+				margin-bottom: 47px
+				width: auto
 
-		.p-section05__icon
-			margin:
-				top: 16px
-				bottom: -8px
+		.warning
+			img
+				width: 609px * .5
+
+				@media screen and (min-width: $screen-md)
+					width: auto
 
 	.p-section-06
-		img
-			margin-bottom: $grid-gutter-width * .5
+		.c-corner__title
+			img
+				@media screen and (max-width: $screen-md)
+					width: 490px * .5
 
-			@media screen and (min-width: $screen-md)
-				margin-bottom: $grid-gutter-width
+		.c-corner__body
 
-			&:first-child
-				margin-top: 0
+		.c-body__title
+			margin-bottom: 22px
+
+			@media screen and (max-width: $screen-md)
+				margin-bottom: 32px
+
+
+			img
+				@media screen and (max-width: $screen-md)
+					width: 480px * .5
+		.p-list
+			margin-left: 0
+
+			li
+				list-style: none
+				@media screen and (min-width: $screen-md)
+					margin-bottom: 70px
+
+					&:first-child
+						margin-left: 0
+
+				@media screen and (max-width: $screen-md)
+					margin-bottom: 35px
+
+
+			.p-list_img
+				line-height: 0
+				margin-bottom: 10px
+
+				@media screen and (min-width: $screen-md)
+					margin-bottom: 15px
+
+			.p-list_meta
+				color: $white
+				font:
+					size: 14px
+					weight: 600
+				line-height: 1.4
+				padding-left: 51px * .5
+				word-break: break-all
+				position: relative
+
+				@media screen and (min-width: $screen-md)
+					font-size: 18px
+					padding-left: 34px + 5px
+
+				&::before
+					background: url('../images/common/icon_facebook.png') no-repeat center / cover
+					content: ""
+					left: 0
+					height: 34px * .5
+					width: 34px * .5
+					position: absolute
+					top: 5px
+
+					@media screen and (min-width: $screen-md)
+						height: 51px * .5
+						width: 51px * .5
+
+				a
+					color: $white
+					font-size: 11px
+					transition: all .4s
+					-webkit-transition: all .4s
+
+					&:hover
+						opacity: .6
 
 	.p-section-07
 		.c-corner__title
-			margin-bottom: 20px
+			margin-bottom: 25px
 
 			@media screen and (min-width: $screen-md)
-				margin-bottom: 40px
+				margin-bottom: 35px
 
 			img
-				vertical-align: middle
-				margin-right: 8px
+				@media screen and (max-width: $screen-md)
+					width: 209px * .5
 
 			h2
 				color: $dark-green
@@ -322,6 +473,29 @@ img
 
 				@media screen and (min-width: $screen-md)
 					font-size: 28px
+
+		.c-panel__item
+			@media screen and (max-width: $screen-sm)
+				margin-top: 15px
+
+				&:first-child
+					margin-top: 0
+
+		.c-corner__body
+			img
+				@media screen and (min-width: $screen-md)
+					width
+
+		.c-txt_warning
+			font:
+				weight: 600
+				size: 15px
+			line-height: 1.8
+			margin-top: 25px
+
+			@media screen and (min-width: $screen-md)
+				font-size: 12px
+				margin-top: 40px
 
 
 	.contactpagouterewrap
