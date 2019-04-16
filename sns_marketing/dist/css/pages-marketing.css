@@ -1116,7 +1116,7 @@ img {
 #hitokuru .p-section-03 .p-section_upper::before,
 #hitokuru .p-section-05 .p-section_upper::before {
   border-right: 140px solid transparent;
-  border-top: 90px solid #29aae1;
+  border-top: 90px solid #b0e5f7;
 }
 
 @media screen and (min-width: 992px) {
@@ -1130,7 +1130,7 @@ img {
 #hitokuru .p-section-03 .p-section_upper::after,
 #hitokuru .p-section-05 .p-section_upper::after {
   border-left: 140px solid transparent;
-  border-top: 90px solid #29aae1;
+  border-top: 90px solid #b0e5f7;
 }
 
 @media screen and (min-width: 992px) {
@@ -1155,7 +1155,7 @@ img {
 #hitokuru .p-section-03 .p-section_downer::before,
 #hitokuru .p-section-05 .p-section_downer::before {
   border-right: 140px solid transparent;
-  border-bottom: 90px solid #29aae1;
+  border-bottom: 90px solid #b0e5f7;
 }
 
 @media screen and (min-width: 992px) {
@@ -1169,7 +1169,7 @@ img {
 #hitokuru .p-section-03 .p-section_downer::after,
 #hitokuru .p-section-05 .p-section_downer::after {
   border-left: 140px solid transparent;
-  border-bottom: 90px solid #29aae1;
+  border-bottom: 90px solid #b0e5f7;
 }
 
 @media screen and (min-width: 992px) {
@@ -1178,6 +1178,10 @@ img {
     border-left-width: 280px;
     border-bottom-width: 180px;
   }
+}
+
+#hitokuru .p-section-01 {
+  margin-top: 40px;
 }
 
 #hitokuru .p-section-02 {
